@@ -9,13 +9,14 @@
 
 .container-main{
     height: 100%;
-    width: 100vw;
+    width: 100%;
     background: #27374D;
     padding: 15px;
 
         & .container-nav{
-            width: 60vw;
+            width: 1200px;
             margin: 0 auto;
+
 
             & nav{
                 width: 100%;
@@ -25,7 +26,7 @@
 
                 & .logo{
                     color: #fff;
-                    font-size: 30px;
+                    font-size: 20px;
 
                     & a{
                         color: #fff;
@@ -135,7 +136,7 @@
 
 
         & .container-info1{
-            width: 60vw;
+            width: 1200px;
             margin: 0 auto;
             display: flex;
             justify-content: start;
@@ -157,13 +158,15 @@
                                 /* width: 40%; */
                                 color: #DDE6ED;
                                 text-shadow: 5px 4px rgb(0, 0, 0); 
-                                font-size: 60px;
+                                font-size: 40px;
+                                margin-bottom: 10px;
                             }
         
                             & p{
                                 color: #DDE6ED;
                                 text-shadow: 2px 2px rgb(0, 0, 0); 
-                                font-size: 20px;
+                                font-size: 18px;
+                                width: 25vw;
                             }
                         }
 
@@ -174,7 +177,7 @@
                         background: #27374D;
                         color: #fff;
                         text-decoration: none;
-                        font-size: 20px;
+                        font-size: 16px;
                         transition: 0.3s ease;
                     }
 
@@ -204,7 +207,7 @@
             justify-content: center;
 
             & .container-info2{
-                width: 60vw;
+                width: 1200px;
     
                     & .support-top{
                         display: flex;
@@ -237,10 +240,9 @@
 
         .container-main2-card{
             margin-top: 40px;
-
         
                 & .container-card{
-                    width: 60vw;
+                    width: 1200px;
                     height: auto;
                     display: flex;
                     /* align-items: center; */
@@ -256,8 +258,9 @@
                                 padding: 10px;
                                 background: #333;
                                 border-radius: 5px;
-                                width: 20vw;
-                                height: 300px;
+                                /* width: 18vw; */
+                                max-width: 15vw;
+                                height: 250px;
                                 margin-bottom: 40px;
                                 display: flex;
                                 justify-content: center;
@@ -284,6 +287,7 @@
         
                             & .card-detail{
                                     & p{
+                                        max-width: 15vw;
                                         font-size: 16px;
                                     }
                             }
@@ -303,70 +307,63 @@
     display: flex;
     justify-content: center;
     border-image: fill 0 linear-gradient(#0001,#000);
-
+    padding: 15px;
 
     & .container-info3{
-        /* border: 1px solid red; */
         width: 1200px;
-        padding: 15px;
 
             & .information3{
-                height: 600px;
-                /* border: 1px solid red; */
+                height: 500px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
 
-
                     & .outline{
                         display: flex;
                         flex-direction: column;
-                        align-items: center;
+                        align-items: end;
                         justify-content: flex-end;
-                        min-width: 550px;
                         margin-left: auto;
                         /* ที่ใส่ margin left auto เพราะมันจะทำตามคำสั่งจาก justify-content ที่สั่งให้ทำเป็น flex-end(ไปเริ่มที่ด้านขวา)*/ 
                         /* backdrop-filter: blur(5px); */
-                        border: 2px solid #DDE6ED;
-                        border-radius: 10px;
-                        width: 40%;
-                        padding: 20px;
+                        /* border: 2px solid #DDE6ED; */
+                        /* border-radius: 10px; */
                         margin-bottom: 40px;
 
                         & h1{
-                            /* border: 1px solid red; */
+                            width: 20vw;
                             color: #DDE6ED;
                             text-shadow: 5px 4px rgb(0, 0, 0); 
-                            font-size: 60px;
+                            font-size: 30px;
                             text-align: end;
+                            margin-bottom: 10px;
                         }
     
                         & p{
+                            width: 25vw;
                             text-align: end;
                             /* border: 1px solid red; */
                             color: #DDE6ED;
                             text-shadow: 2px 2px rgb(0, 0, 0); 
-                            font-size: 20px;
+                            font-size: 18px;
                         }
                     }
 
                 .btn-detail{
-                    /* border: 1px solid red; */
                     display: flex;
                     align-items: center;
                     justify-content: flex-end;
-                    min-width: 550px;
                     margin-left: auto;
 
                     & a{
                         border: 1px solid rgb(39, 55, 77);
                         border-radius: 10px;
-                        padding: 20px;
+                        padding: 10px 20px;
                         background: #27374D;
                         color: #fff;
                         text-decoration: none;
-                        font-size: 20px;
+                        font-size: 16px;
                         transition: 0.3s ease;
                         }
         
@@ -374,7 +371,6 @@
                         border: 1px solid #DDE6ED;
                         background: #DDE6ED;
                         color: #27374D;
-                        transition: 0.3s ease;
                         }
                 }
         }
@@ -387,15 +383,14 @@
     background: #fff;
     display: flex;
     justify-content: center;
+    padding: 15px;
 
         & .container-info4{
             width: 1200px;
-            padding: 15px;
-            /* border: 1px solid red; */
 
                 & .opentime{
                     margin-top: 40px;
-                    margin-bottom: 40px;
+                    margin-bottom: 20px;
 
                         & p{
                             font-size: 20px;
@@ -409,103 +404,155 @@
 }
 
 .container-main5{
-    height: 500px;
+    height: 700px;
     width: 100%;
     background: #fff;
     display: flex;
     justify-content: center;
+    padding: 15px;
 
         & .container-info5{
             width: 1200px;
-            padding: 15px;
-            /* border: 1px solid red; */
 
                 & .form-detailed{
-                    /* border: 1px solid blue; */
+                    width: 100%;
 
                         & .product-list{
-                            display: grid;
-                            grid-template-columns: repeat(3, 1fr);
-                            grid-gap: 40px;
 
-                                & .card-pic{
-                                    /* border: 1px solid blue; */
-                                    display: inline;
-                                    /* align-items: center;
-                                    justify-content: center; */
-                                    /* place-items: center; */
+                            .main-product-right{
+                                width: 100%;
+            
+                                    .main-product-list{
+                                        display: grid;
+                                        grid-auto-columns: 1fr;
+                                        grid-column-gap: 16px;
+                                        grid-row-gap: 16px;
+                                        grid-template-columns: 1fr 1fr 1fr;
+                                        grid-template-rows: auto auto;
+            
+                                            .product{
 
-                                        & img{
-                                            width: 370px;
-                                            height: 200px;
-                                            /* object-fit: contain;  */
-                                            /*อันนี้คือปรับขนาดรูปภาพ */
-                                            border-radius: 10px;
-                                        }
+                                                    a{
+                                                        text-decoration: none;
+                                                        color: #27374D;
 
-                                        & .motorcycle-list{
-                                            /* border: 1px solid red; */
-                                            margin-top: 20px;
-                                            margin-bottom: 20px;
-                                            
-                                                & .list-name{
-                                                    display: flex;
-                                                    justify-content: center;
-                                                    align-items: center;
-
-                                                        & h3{
-                                                            font-size: 25px;
+                                                        .product-picture-bike{
+                                                            background: url("bmw-s1000rr-motogp-safety-motorcycle-2880x1620_54787-mm-90.jpg");
+                                                            background-position: 30% 50%;
+                                                            background-repeat: no-repeat;
+                                                            background-size: cover;
+                                                            border-radius: 5px;
+                                                            min-height: 400px;
                                                         }
-                                                }
 
-                                                & .list-price{
-                                                    display: flex;
-                                                    justify-content: center;
-                                                    align-items: center;
-
-                                                        & p{
-                                                            font-size: 15px;
+                                                        .product-picture-helmet{
+                                                            background: url("helmet01.jpg");
+                                                            background-position: center;
+                                                            background-repeat: no-repeat;
+                                                            background-size: cover;
+                                                            border-radius: 5px;
+                                                            min-height: 400px;
                                                         }
-                                                }
-                                        }
+            
+                                                        .product-picture-pack{
+                                                            position: relative;
+                                                            background: url("pack01.jpg");
+                                                            background-position: center;
+                                                            background-repeat: no-repeat;
+                                                            background-size: cover;
+                                                            border-radius: 5px;
+                                                            min-height: 400px;
+            
+                                                                .top-right{
+                                                                    position: absolute;
+                                                                    top: 10px;
+                                                                    right: 10px;
+                                                                    
+                                                                        p{
+                                                                            font-size: 14px;
+                                                                            color: #DDE6ED;
+                                                                            background: #eb5757;
+                                                                            border: 1px solid #eb5757;
+                                                                            border-radius: 5px;
+                                                                            padding: 5px 10px;
+                                                                        }
+                                                                }
+                                                        }
 
-                                        & .detail{
-                                            display: flex;
-                                            justify-content: center;
-                                            align-items: center;
-                                            /* border: 1px solid red; */
-
-                                                & a{
-                                                    text-decoration: none;
-                                                    color: #27374D;
-                                                    background: #fff;
-                                                    border: 1px solid #27374D;
-                                                    border-radius: 5px;
-                                                    padding: 10px;
-                                                    transition: 0.3s ease;
-                                                }
-
-                                                & a:hover{
-                                                    color: #fff;
-                                                    background: #27374D;
-                                                    border: 1px solid #27374D;
-                                                    transition: 0.3s ease;
-                                                }
-                                        }
-                                }
+                                                        .name{
+                                                            margin-top: 10px;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: center;
+                                                                p{
+                                                                    font-size: 18px;
+                                                                }
+                                                        }
+                                                        .price{
+                                                            margin-top: 5px;
+                                                            margin-bottom: 10px;
+                                                            display: flex;
+                                                            align-items: center;
+                                                            justify-content: center;
+                                                                p{
+                                                                    font-size: 14px;
+                                                                    font-weight: bold;
+                                                                }
+                                                                .discount-price p{
+                                                                    font-size: 14px;
+                                                                    font-weight: bold;
+                                                                    color: red;
+                                                                    text-decoration: line-through;
+                                                                }
+                                                                .full-price p{
+                                                                    font-size: 14px;
+                                                                    font-weight: bold;
+                                                                    margin-right: 10px;
+                                                                }
+                                                        }
+                                                    }
+                                                    
+                                                    .product-detail{
+                                                        display: flex;
+                                                        align-items: center;
+                                                        justify-content: center;
+                                                            
+                                                            a{
+                                                                text-decoration: none;
+                                                                border: 1px solid #9DB2BF;
+                                                                border-radius: 5px;
+                                                                background: #9DB2BF;
+                                                                color: #27374D;
+                                                                padding: 10px 20px;
+                                                                font-size: 16px;
+                                                                transition: 0.3s ease;
+                                                            }
+                                                            a:hover{
+                                                                border: 1px solid #27374D;
+                                                                background: #27374D;
+                                                                color: #DDE6ED;
+                                                            }
+                                                    }
+                                            }
+                                    }                                                 
+                            }
                         }
                 }
 
             .more-detail{
                 width: 100%;
-                height: 100px;
-                /* border: 1px solid red; */
+                height: auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 50px;
 
                     & .btn-detail{
+                        width: 100%;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        margin-top: 40px;
+                        width: 100%;
 
                             & a{
                                 text-decoration: none;
@@ -513,7 +560,7 @@
                                 background: #526D82;
                                 border: 1px solid #526D82;
                                 border-radius: 5px;
-                                padding: 10px;
+                                padding: 10px 20px;
                                 transition: 0.3s ease;
                             }
 
@@ -529,29 +576,26 @@
 }
 
 .container-main6{
-    height: 500px;
+    height: auto;
     width: 100%;
     background: #fff;
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 15px;
 
         .container-info6{
             width: 1200px;
-            padding: 15px;
-            /* border: 1px solid red; */
 
                 & .profile{
-                    /* position: relative; */
-                    display: flex;
-                    justify-content: flex-end;
+                    position: relative;
 
                         & .profile-pic{
-                            /* border: 1px solid green; */
-                            margin-top: 30px;
-                            margin-left: 50px;
 
                                 & img{
                                     position: absolute; /*เป็นการเอาภาพออกมาเพื่อให้เรากำหนดการจัดวางของรูปภาพได้*/
+                                    top: 40px;
+                                    left: 20px;
                                     width: 330px;
                                     height: 350px;
                                     /* object-fit: contain;  */
@@ -561,27 +605,32 @@
                                 }
                         }
 
-                        & .profile-content{
-                            /* border: 1px solid green; */
-                            margin-left: 200px;
-                            background: #27374D;
-                            border-radius: 10px;
-                            padding-left: 300px;
-                            padding-top: 50px;
-                            padding-bottom: 50px;
-                            padding-right: 200px;
+                        & .content-right{
+                            margin-bottom: 50px;
 
-                                & h1{
-                                    font-size: 30px;
-                                    color: #fff;
-                                    margin-bottom: 15px;
-                                }
 
-                                & p{
-                                    font-size: 15px;
-                                    color: white;
-                                    margin-bottom: 10px;
-                                }
+                            & .profile-content{
+                                background: #27374D;
+                                border-radius: 10px;
+                                margin-left: 200px;
+                                border-radius: 10px;
+                                padding-left: 200px;
+                                padding-top: 50px;
+                                padding-bottom: 100px;
+                                padding-right: 60px;
+    
+                                    & h1{
+                                        font-size: 30px;
+                                        color: #fff;
+                                        margin-bottom: 15px;
+                                    }
+    
+                                    & p{
+                                        font-size: 15px;
+                                        color: white;
+                                        margin-bottom: 10px;
+                                    }
+                            }
                         }
                 }
         }
@@ -600,14 +649,12 @@ footer{
             padding: 15px;
 
                 & nav{
-                    /* border: 1px solid green; */
                     display: flex;
                     align-items: center;
                     justify-content: space-between;
                     margin-top: 40px;
 
                         & .logo{
-                            /* border: 1px solid red; */
 
                                 & a{
                                     color: #fff;
@@ -620,7 +667,6 @@ footer{
                             list-style: none;
                             
                                 & li{
-                                    /* border: 1px solid red; */
 
                                         & a{
                                             margin-left: 20px;
@@ -631,7 +677,6 @@ footer{
 
                                         & a:hover{
                                             color: #9DB2BF;
-                                            transition: 0.3s ease;
                                         }
                                 }
                         }

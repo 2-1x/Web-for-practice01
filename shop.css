@@ -1,0 +1,401 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.container-main{
+    height: 100%;
+    width: 100%;
+    background: #27374D;
+    padding: 15px;
+
+        & .container-nav{
+            width: 1200px;
+            margin: 0 auto;
+
+            & nav{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                & .logo{
+                    color: #fff;
+                    font-size: 20px;
+
+                    & a{
+                        color: #fff;
+                        font-size: 40px;
+                        text-decoration: none;
+                    }
+                }
+
+                & .list-direction {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    & ul{
+                        list-style: none;
+    
+                        & li{
+
+                                & a{
+                                    font-size: 16px;
+                                    margin-right: 20px;
+                                    color: #fff;
+                                    text-decoration: none;
+                                    background: #27374D;
+                                    border: 1px solid #27374D;
+                                    border-radius: 5px;
+                                    padding: 10px;
+                                    transition: 0.3s ease;
+                                }
+    
+                                & a:hover{
+                                    color: #DDE6ED;
+                                    transition: 0.3s ease;
+                                    border: 1px solid #9DB2BF;
+                                    border-radius: 5px;
+                                    background: #9DB2BF;
+                                    color: #27374D;
+                                }
+    
+                                & i{
+                                    border: 1px solid #526D82;
+                                    border-radius: 5px;
+                                    padding: 10px;
+                                    background: #526D82;
+                                    transition: 0.3s ease;
+                                }
+    
+                                & i:hover{
+                                    background: #DDE6ED;
+                                    color: #526D82;
+                                }
+                        }
+                    }
+    
+                    & .cart{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        position: relative;
+
+                            & i{
+                                font-size: 25px;
+                                cursor: pointer;
+                                color: #DDE6ED;
+                                border-radius: 5px;
+                                padding: 10px;
+                                transition: 0.3s ease;
+                            }
+        
+                            & i:hover{
+                                color: #fff;
+                            }
+
+                            & .cart-count{
+                                position: absolute;
+                                top: -5px;
+                                right: -5px;
+                                cursor: pointer;
+                                width: 25px;
+                                height: 25px;
+                                border-radius: 50%;
+                                background: #9DB2BF;
+                                color: #fff;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                    }
+                }
+            }
+        }
+}
+
+.head-product{
+    width: 100%;
+    height: 100px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #526D82;
+
+        .detail-head-product{
+            width: 1200px;
+            height: auto;
+
+                h1{
+                    font-size: 40px;
+                    color: #fff;
+                }
+        }
+}
+
+.show-product{
+    width: 100%;
+    height: 400px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+        .detail-show-product{
+            width: 1200px;
+
+                a{
+                    position: relative;
+                    text-decoration: none;
+                    color: #fff;
+                    z-index: 0;
+
+                        .top-right{
+                            position: absolute;
+                            z-index: 10;
+                            top: 20px;
+                            right: 20px;
+
+                                p{
+                                    font-size: 16px;
+                                    border: 1px solid #DDE6ED;
+                                    border-radius: 5px;
+                                    background: #DDE6ED;
+                                    color: #27374D;
+                                    padding: 5px 20px;
+                                }
+                        }
+
+                        .down-left{
+                            position: absolute;
+                            z-index: 10;
+                            left: 20px;
+                            bottom: 20px;
+
+                                .down-left-name{
+                                    margin-bottom: 10px;
+
+                                    p{
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                    }
+                                }
+
+                                .down-left-price{
+                                    p{
+                                        font-size: 16px;
+                                    }
+                                }
+                        }
+                }
+
+                .picture-wall{
+                    z-index: 0;
+                    position: relative;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background: url("kirill-petropavlov-f_gCjlNcVWo-unsplash.jpg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: 50% 40%;
+                    border-radius: 5px;
+                    width: 100%;
+                    height: 300px;
+                }
+        }
+}
+
+.main-product{
+    width: 100%;
+    height: 800px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+
+        .main-product-all{
+            width: 1200px;
+            display: flex;
+            /* justify-content: center;
+            align-items: center; */
+
+                .main-product-left{
+                    width: 200px;
+                    height: 500px;
+
+                        .main-product-detail{
+                            width: 100%;
+                            height: 100%;
+                            display: flex;
+                            flex-direction: column;
+
+                                p{
+                                    font-size: 18px;
+                                    margin-bottom: 10px;
+                                    font-weight: bold;
+                                }
+                                a{
+                                    text-decoration: none;
+                                    color: #27374D;
+                                    border: 1px solid #27374D;
+                                    border-radius: 5px;
+                                    padding: 10px 20px;
+                                    margin-bottom: 10px;
+                                    font-weight: bold;
+                                    transition: 0.3s ease;
+                                }
+                                a:hover{
+                                    color: #DDE6ED;
+                                    background-color: #27374D;
+                                    border: 1px solid #27374D;
+                                }
+                        }
+                }
+
+                .main-product-right{
+                    width: 1000px;
+                    height: 500px;
+
+                        .main-product-list{
+                            padding: 15px;
+                            display: grid;
+                            grid-auto-columns: 1fr;
+                            grid-column-gap: 16px;
+                            grid-row-gap: 16px;
+                            grid-template-columns: 1fr 1fr 1fr;
+                            grid-template-rows: auto auto;
+
+                                .product{
+
+                                        a{
+                                            text-decoration: none;
+                                            color: #27374D;
+
+                                            .product-picture-gift-card{
+                                                background: url("gift-card.jpg");
+                                                background-position: center;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                border-radius: 5px;
+                                                min-height: 400px;
+                                            }
+
+                                            .product-picture-bike{
+                                                background: url("bmw-s1000rr-motogp-safety-motorcycle-2880x1620_54787-mm-90.jpg");
+                                                background-position: 30% 50%;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                border-radius: 5px;
+                                                min-height: 400px;
+                                            }
+
+                                            .product-picture-pack{
+                                                position: relative;
+                                                background: url("pack01.jpg");
+                                                background-position: center;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                border-radius: 5px;
+                                                min-height: 400px;
+
+                                                    .top-right{
+                                                        position: absolute;
+                                                        top: 10px;
+                                                        right: 10px;
+                                                        
+                                                            p{
+                                                                font-size: 14px;
+                                                                color: #DDE6ED;
+                                                                background: #eb5757;
+                                                                border: 1px solid #eb5757;
+                                                                border-radius: 5px;
+                                                                padding: 5px 10px;
+                                                            }
+                                                    }
+                                            }
+
+                                            .product-picture-helmet{
+                                                background: url("helmet01.jpg");
+                                                background-position: center;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                border-radius: 5px;
+                                                min-height: 400px;
+                                            }
+
+                                            .product-picture-glove{
+                                                background: url("glove01.jpg");
+                                                background-position: center;
+                                                background-repeat: no-repeat;
+                                                background-size: cover;
+                                                border-radius: 5px;
+                                                min-height: 400px;
+                                            }
+
+                                            .name{
+                                                margin-top: 10px;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                    p{
+                                                        font-size: 18px;
+                                                    }
+                                            }
+                                            .price{
+                                                margin-top: 5px;
+                                                margin-bottom: 10px;
+                                                display: flex;
+                                                align-items: center;
+                                                justify-content: center;
+                                                    p{
+                                                        font-size: 14px;
+                                                        font-weight: bold;
+                                                    }
+                                                    .discount-price p{
+                                                        font-size: 14px;
+                                                        font-weight: bold;
+                                                        color: red;
+                                                        text-decoration: line-through;
+                                                    }
+                                                    .full-price p{
+                                                        font-size: 14px;
+                                                        font-weight: bold;
+                                                        margin-right: 10px;
+                                                    }
+                                            }
+                                        }
+
+                                        .product-detail{
+                                            display: flex;
+                                            align-items: center;
+                                            justify-content: center;
+                                                
+                                                a{
+                                                    text-decoration: none;
+                                                    border: 1px solid #9DB2BF;
+                                                    border-radius: 5px;
+                                                    background: #9DB2BF;
+                                                    color: #27374D;
+                                                    padding: 10px 20px;
+                                                    font-size: 16px;
+                                                    transition: 0.3s ease;
+                                                    margin-bottom: 40px;
+                                                }
+                                                a:hover{
+                                                    border: 1px solid #27374D;
+                                                    background: #27374D;
+                                                    color: #DDE6ED;
+                                                }
+                                        }
+                                }
+                        }
+                }
+        }
+}
